@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .btn{
+            height: 50px;
+            width: 50px;
+            margin: 2px;
+        }
+        .form{
+            height: 50px;
+            width: 222px;
+            margin: 2px;
+            text-align: right;
+        }
+    </style>
+    <script>
+        function buttonfunction(val){
+            form.display.value += val;
+        }
+        function equal(){
+            form.display.value = form.display.value = eval(form.display.value); 
+        }
+        function clearScreen(){
+            form.display.value = "";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div align="center" class="Calculator" >
+            <form name="form">
+                <input type="text" class="form form-control" name="display" value="" placeholder="0">
+                <div class="mt-2">
+                    <button type="button" class="btn btn-outline-primary" value="1" onclick="buttonfunction(this.value)">1</button>
+                    <button type="button" class="btn btn-outline-primary" value="2" onclick="buttonfunction(this.value)">2</button>
+                    <button type="button" class="btn btn-outline-primary" value="3" onclick="buttonfunction(this.value)">3</button>
+                    <button type="button" class="btn btn-outline-primary" value="+" onclick="buttonfunction(this.value)">+</button>
+                    <br>
+                    <button type="button" class="btn btn-outline-primary" value="4" onclick="buttonfunction(this.value)">4</button>
+                    <button type="button" class="btn btn-outline-primary" value="5" onclick="buttonfunction(this.value)">5</button>
+                    <button type="button" class="btn btn-outline-primary" value="6" onclick="buttonfunction(this.value)">6</button>
+                    <button type="button" class="btn btn-outline-primary" value="-" onclick="buttonfunction(this.value)">-</button>
+                    <br>
+                    <button type="button" class="btn btn-outline-primary" value="7" onclick="buttonfunction(this.value)">7</button>
+                    <button type="button" class="btn btn-outline-primary" value="8" onclick="buttonfunction(this.value)">8</button>
+                    <button type="button" class="btn btn-outline-primary" value="9" onclick="buttonfunction(this.value)">9</button>
+                    <button type="button" class="btn btn-outline-primary" value="*" onclick="buttonfunction(this.value)">X</button>
+                    <br>
+                    <button type="button" class="btn btn-outline-primary"  onclick="equal()">=</button>
+                    <button type="button" class="btn btn-outline-primary"  onclick="clearScreen()">C</button>
+                    <button type="button" class="btn btn-outline-primary" value="0" onclick="buttonfunction(this.value)">0</button>
+                    <button type="button" class="btn btn-outline-primary" value="/" onclick="buttonfunction(this.value)">/</button>
+                </div>
+            </form>
+    
+    
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
